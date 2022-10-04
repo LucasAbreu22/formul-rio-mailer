@@ -11,7 +11,7 @@ $evento = $_POST['event'];
 
 if ($evento == 'getAluno') {
   $sql = "SELECT nome, inscricao, email_enviado 
-          FROM alunos";
+          FROM aluno";
   $query = $pdo->prepare($sql);
   $query->execute();
   $call = $query->fetchAll(PDO::FETCH_OBJ);
@@ -117,7 +117,7 @@ if ($evento == 'insert') {
 if ($evento == 'senha') {
 
   $senha = $_POST['senha'];
-  $sql = "SELECT senha FROM senhaCil
+  $sql = "SELECT senha FROM senha_formulario
           WHERE senha = '$senha'";
 
   $query = $pdo->prepare($sql);
@@ -130,7 +130,7 @@ if ($evento == 'senha') {
 }
 
 if ($evento == 'del') {
-  $sql = "DELETE FROM alunos";
+  $sql = "DELETE FROM aluno";
   $query = $pdo->prepare($sql);
   $query->execute();
   $dir = '../../Mailer/documentos';

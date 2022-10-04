@@ -14,7 +14,7 @@ if($inscricao == ''){
   die("erro: falta inscricao");
 }
 
-$sql = "SELECT * FROM alunos WHERE inscricao = $inscricao";
+$sql = "SELECT * FROM aluno WHERE inscricao = $inscricao";
 $query = $pdo->prepare($sql);
 
 if($query->execute()){

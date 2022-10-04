@@ -19,17 +19,17 @@ try{
   $mail->isSMTP();
   $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth = true;
-  $mail->Username='eueu2260@gmail.com';
-  $mail->Password = 'eueu2260@2012';
+  $mail->Username='teste@email.com';
+  $mail->Password = 'teste@2012';
   $mail->Port = 587;
 
-  $mail->setFrom('eueu2260@gmail.com');
-  $mail->addAddress('eueu2260@gmail.com');
+  $mail->setFrom('teste@email.com');
+  $mail->addAddress('teste@email.com');
 
   $mail->isHTML(true);
-  $mail->Subject = 'Teste de email SSInovatec';
-  $mail->Body = 'Teste do EEEEmail <b>SSInovatec</b>';
-  $mail->AltBody = 'Teste do EEEEmail SSInovatec';
+  $mail->Subject = 'Teste de email';
+  $mail->Body = 'Teste do EEEEmail <b>teste</b>';
+  $mail->AltBody = 'Teste do EEEEmail teste';
 
   if($mail->send()){
     echo 'Email enviado com sucesso';

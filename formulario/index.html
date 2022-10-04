@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="js/xModal/xModal.css">
+  <link href="images/OPÇÃO 3.png" rel="icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Confirmação de Matrícula</title>
+</head>
+
+<body>
+
+
+  <div class="content">
+
+    <div class="container">
+      <div class="row align-items-stretch justify-content-center no-gutters">
+        <div class="col-md-7">
+          <div class="form h-100 contact-wrap p-5">
+            <h3 class="text-center">CONFIRMAÇÃO DE MATRÍCULA</h3>
+
+            <div class="row">
+
+              <div class="col-md-4 form-group mb-3">
+                <label for="" class="col-form-label">Inscrição*</label>
+                <input type="number" class="form-control" id="inscricao">
+              </div>
+
+              <div class="col-md-8 form-group mb-3">
+                <label for="" class="col-form-label">Nome*</label>
+                <input type="text" class="form-control" id="name" disabled>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 form-group mb-3">
+                <label for="" class="col-form-label">Email*</label>
+                <input type="email" class="form-control" id="email_contato">
+              </div>
+            </div>
+
+            <ul style="margin-left: -5%!important;">
+              <li> <b><span>RG do responsável é necessário somente quando o aluno for menor de 18 anos.</span></b></li>
+              <li> <b>Evite sair da página enquanto as informações estão sendo carregadas.</b></li>
+            </ul>
+
+            <div class="row">
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Foto 3x4*</label>
+                <input type="file" class="form-control" id="foto3x4">
+              </div>
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Certidão de Nascimento ou RG*</label>
+                <input type="file" class="form-control" id="certidao_nasc">
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label" id="lblDeclaracao">Declaração de escolaridade ou certificado</label>
+                <input type="file" class="form-control" id="declaracao_escolaridade">
+              </div>
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Comprovante de residência*</label>
+                <input type="file" class="form-control" id="comprovante_residencia">
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Cópia do CPF*</label>
+                <input type="file" class="form-control" id="copia_cpf">
+              </div>
+
+              <div class="col-md-6 form-group mb-3">
+                <label for="" class="col-form-label">Cópia do RG do responsável</label>
+                <input type="file" class="form-control" id="copia_rg_responsavel">
+              </div>
+
+            </div>
+          
+            <div class="row justify-content-center">
+              <div class="col-md-5 form-group text-center">
+                <button class="btn btn-block btn-primary rounded-0 py-2 px-4" id="enviar">Enviar Email</button>
+                <span class="submitting"></span>
+              </div>
+            </div>
+
+            <div id="loading"></div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="js/modais.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/xModal/xModal.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src='js/compress.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<meta charset="UTF-8">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+    <script src="plugin/modais.js"></script>
+    <script src="plugin/xModal/xModal.js"></script>
+    <link rel="stylesheet" href="plugin/xModal/xModal.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="./images/engrenagem.png" rel="icon">
+    <title>Painel do Formulário</title>
+    <div id="painel" >
+        <button class="controlBtn disabilitado" id="manutencaoEmail" disabled><i class="fas fa-cog"></i></button>
+        <label for="fileUpload" class="labelUp disabilitado" disabled>Escolher arquivo <i class="fas fa-upload" id=iconUp></i></label>
+        <input type="file" id="fileUpload" disabled hidden/>
+        <button id="upload" class="controlBtn disabilitado" disabled>UPLOAD</button>
+        <button id="delete" class="controlBtn disabilitado" disabled>Deletar tudo <i class="fas fa-eraser"></i></button>
+        <input type="checkbox" id="checkCampo" disabled>
+        <label id='labelOpicional'>Obrigatório: Declaração de escolaridade</label>
+        <i class="fas fa-power-off" id="ativarForm"></i><label id="statusForm"> DESLIGADO</label>
+    </div>
+    <hr />
+                
+    </div>
+
+</head>
+
+<body>
+
+    <div id="tables"></div>
+    <div id="dvExcel"></div>
+    <div id="tableDb"></div>
+    <div id="xmModalEmail">
+
+        <label id="lblMail">Email</label><br>
+        <input type="text" id="edtMail">
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="lista.js"></script>

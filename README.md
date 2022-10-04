@@ -1,1 +1,1 @@
-"# formulario-mailer" 
+Formulário para os alunos preencherem com seus dados e documentos, que ao confirmar o formulário, o sistema faz o envio de email para o email salvo no banco de dados de envio. Existe a parte admnistrativa no sistema no qual o administrador envia uma planilha com os dados dos alunos para cadastrá-los no sistema e fazer funcionar o formulário. É possível cadastrar e alterar o email que receberá o formulário, e desligar o formulário.

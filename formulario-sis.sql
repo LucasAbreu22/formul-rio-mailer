@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Out-2022 às 19:23
+-- Tempo de geração: 04-Out-2022 às 19:38
 -- Versão do servidor: 10.4.21-MariaDB
 -- versão do PHP: 7.4.24
 
@@ -56,6 +56,13 @@ CREATE TABLE `formulario` (
   `campo_obrigatório` tinyint(1) NOT NULL,
   `status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `formulario`
+--
+
+INSERT INTO `formulario` (`id_formulario`, `campo_obrigatório`, `status`) VALUES
+(1, 0, 'DESLIGADO');
 
 -- --------------------------------------------------------
 
@@ -116,7 +123,7 @@ ALTER TABLE `email`
 -- AUTO_INCREMENT de tabela `formulario`
 --
 ALTER TABLE `formulario`
-  MODIFY `id_formulario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_formulario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `senha_formulario`
